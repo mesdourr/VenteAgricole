@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3edf5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Data_Produit">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/loign_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/vert"
+            android:elevation="15dp"
+            android:padding="15dp"
+            android:text="Ajout Produit"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:targetApi="LOLLIPOP" />
+
+        <ImageView
+            android:id="@+id/img_produit"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/produit" />
+
+
+        <EditText
+            android:id="@+id/txt_namep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Nom Produit"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txt_quentity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Quantity Produit"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/txt_prix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Prix Produit"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Place"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/img_place"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_location_on" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_sav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/loign_shape"
+                android:text="Ajouter"
+                android:textColor="@color/vert"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
